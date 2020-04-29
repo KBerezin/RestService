@@ -4,8 +4,8 @@ package ru.javamentor.RestService.rest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.javamentor.RestService.entity.User;
 import ru.javamentor.RestService.entity.Role;
+import ru.javamentor.RestService.entity.User;
 import ru.javamentor.RestService.exception.UserNotFoundException;
 import ru.javamentor.RestService.response.UserSuccessResponse;
 import ru.javamentor.RestService.service.RoleService;
@@ -17,7 +17,6 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api")
-//@Secured("ROLE_ADMIN")
 public class UserRestController {
     private UserService userService;
     private RoleService roleService;
